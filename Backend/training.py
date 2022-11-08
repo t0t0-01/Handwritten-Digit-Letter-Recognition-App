@@ -81,7 +81,7 @@ def splitDataset():
     arr = df.to_numpy()
     np.random.shuffle(arr) 
 
-    ys_train, ys_test, blankArr = np.split(arr, [2558,3410]) #Divide 75-25
+    ys_train, ys_test, blankArr = np.split(arr, [2557,3410]) #Divide 75-25
 
     label_train = ys_train[:, 0]
     labels_train = []

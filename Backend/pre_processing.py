@@ -31,7 +31,7 @@ def remove_contained(boxes):
     return updated
     
 
-def merge_near(boxes, threshold=1000):
+def merge_near(boxes, threshold=250):
     """
     Takes a list of bounding boxes and merges those that are near each other
     within a certain threshold
@@ -116,7 +116,8 @@ def get_bounding_box(input_dir, fname, output_directory, show=False):
     None.
 
     """
-    
+        
+        
     image = cv2.imread(f"{input_dir}/{fname}")
     original = image.copy()
     
